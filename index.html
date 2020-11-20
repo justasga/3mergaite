@@ -5,22 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mergaitė</title>
     <style>
-        main{display: inline-block; width: 800px; background-color: #F8F8F8; margin-left: calc(50% - 400px);
-        }
-        header{display: inline-block;width: 100%; }
-        img{display: inline-block;float: left;margin-left: 5%;margin-top: 5%;
 
+        body,
+        body * {
+                margin 0;
+                padding 0;
+                vertical-align: top;
+                box-sizing: border-box;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
         
-        nav{display: inline-block;text-decoration: none;float: right;margin-right: 5%;margin-top: 5%;
+        body>main {display: inline-block;
+                     width: 800px;
+                     margin-top 20px;
+                    background-color: #F8F8F8;
+                     margin-left: calc(50% - 400px);}
+        
+        header {display: inline-block;
+                width: 100%; }
+        
+        header>img {display: inline-block;
+                    float: left;
+                    height: 50px;
+                    margin-top: 10px;
+                    margin-left: 10px;}
+        
+        nav {display: inline-block;
+            float: right;
+            margin-top: 10px;}
 
+        nav {
+            display: inline-block;
+            float: right;
+            margin-top: 10px;
+        }
+
+        a {
+            display: inline-block;
+            padding: 2px;
+            float: left;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-left: 10px;
+            margin-right: 5px;
+            text-decoration: none;
+            font-size: 13px;
+            color: #9E9E9E;
+            border: 2px solid transparent;
         }
         
-        section{display: inline-block;width: 100%;}
+        a:last-of-type {
+            text-transform: uppercase;
+            border-color: #9E9E9E;
+            border-radius: 22px;}
 
-        p{
-        }
-        h1{display:inline-block;}
+        section {display: inline-block;
+                width: 100%;
+                padding: 20px;
+                margin-top: 60px;}
+
+        div {display: inline-block;
+            width: 46%;
+            float: left;
+            margin-top: 40px;
+            margin-left: 10px;
+            color: #9E9E9E;}
+
+        h1 {display: inline-block;
+            width:100%;
+            font-size: 60px;
+            margin:0;}
+
+        p {display: inline-block;
+            width:100%;
+            font-size: 22px;
+            margin-top: 0;}
+
+
+        section>img {display: inline-block;
+                    float: right;
+                    width: 46%;}
+                    
     </style>
 </head>
 
@@ -29,25 +94,21 @@
        <header>
            <img src="maziukas.png" alt="Atsiprasome logo nera">
            <nav>
-               <a style="text-decoration: none" href="#">Home</a>
-               <a style="text-decoration: none" href="#">Tracks</a>
-               <a style="text-decoration: none" href="#">Library</a>
-               <a style="text-decoration: none" href="#">Community</a>
-               <a style="text-decoration: none" href="#">Sign in</a>
-    
-           </nav>
+               <a href="#">Home</a>
+               <a href="#">Tracks</a>
+               <a href="#">Library</a>
+               <a href="#">Community</a>
+               <a href="#">Sign in</a>
+            </nav>
        </header>
            <section>
                <div>
-                <h1 style="font-size: 80px;margin-left: 10%;">404</h1> 
-                <p style="margin-left: 10%;font-size: 15px;margin-top: -60px;">Lorem ipsum dolor sit<br> amet consectetur adipisicing</p>
+                <h1>404</h1> 
+                <p>Lorem ipsum dolor sit<br> amet consectetur adipisicing</p>
                </div>
-               <div>
-               <img src="mergaite.png" alt="Atsiprasome nuotraukos nera"
-               style="float: right;width: 40%;margin-bottom: 10%;margin-right: 5%;
-               margin-top: -250px;">
-               </div>
+                <img src="mergaite.png" alt="Atsiprasome nuotraukos nera">
            </section>
         </main>
+        
 </body>
 </html>
